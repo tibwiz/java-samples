@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory>
+  <property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+  <property name="hibernate.connection.url">jdbc:oracle:thin:@192.168.115.244:1522:wcs</property>
+  <property name="hibernate.connection.username">wcsdba</property>
+  <property name="hibernate.connection.password">Z7ucXu1wFsVJtFG4</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+  <property name="hbm2ddl.auto">create-drop</property>
+  <property name="show_sql">true</property>
+  <mapping resource="com/amannath/hb/Employee.hbm.xml"></mapping>
+</session-factory>
+</hibernate-configuration>
